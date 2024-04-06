@@ -1,0 +1,4 @@
+enum Tax {
+  cdi,
+  selic,
+}
