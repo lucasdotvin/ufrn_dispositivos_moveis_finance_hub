@@ -17,7 +17,12 @@ void main() async {
     MultiProvider(
       providers: [
         ChangeNotifierProvider<FinanceDataProvider>(
-          create: (_) => FinanceDataProvider(),
+          create: (_) {
+            var financeDataProvider = FinanceDataProvider();
+            financeDataProvider.loadAllData();
+
+            return financeDataProvider;
+          },
         ),
       ],
       child: const MainApp(),
