@@ -41,10 +41,9 @@ flutter pub get
 
 ### 🚀 Execução
 
-Para executar o projeto, siga o fluxo regular de debug de uma aplicação Flutter. No VS Code, por exemplo:
+Para executar o projeto, siga o fluxo regular de debug de uma aplicação Flutter, lembrando de configurar a IDE para carregar os dados do arquivo `.env`. No VS Code, por exemplo, não é necessário fazer nada, pois o arquivo `.vscode/launch.json` já define esse passo para a execução.
 
-1. Abra o projeto
-2. Pressione F5
+Em outras ferramentas, você deve garantir que a flag `--dart-define-from-file=.env` seja passada no comando que executa o projeto.
 
 ## ⚖️ Licença
 
